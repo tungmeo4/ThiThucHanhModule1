@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt('Nhập phần tử');
+    let array = [1, 2, 3, 4, 6, 8, 7, 9];
+    timViTri(num, array);
+
+    function timViTri(element, arr) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] !== element) {
+                continue;
+            } else {
+                let position = i + 1;
+                document.write('Số vừa nhập có trong mảng' + '<br>')
+                document.write('Phần tử bạn nhập nằm ở vị trí thứ ' + position + ' trong mảng')
+            }
+        }
+    }
+</script>
+</body>
+</html>

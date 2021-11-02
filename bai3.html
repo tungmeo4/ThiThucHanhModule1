@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt('Nhập chuỗi');
+    let array = str.split('');
+    nguyenAm(array);
+
+    function nguyenAm(arr) {
+        let count = 0
+        for (let i = 0; i < arr.length; i++) {
+            switch (arr[i]) {
+                case 'a':
+                case 'e':
+                case 'u':
+                case 'o':
+                case 'i':
+                    count += 1;
+                    break;
+            }
+        }
+        if (count === 0) {
+            return false;
+        } else {
+            alert('Chuỗi đã cho có ' + count + ' ký tự nguyên âm');
+        }
+
+    }
+</script>
+</body>
+</html>
